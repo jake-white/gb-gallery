@@ -1,0 +1,70 @@
+
+    <html>
+        <head>
+            <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">          
+            
+            <!-- jQuery -->
+            <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js" type="text/javascript"></script>
+          
+            <!-- nanogallery2 -->
+            <link  href="https://cdn.jsdelivr.net/npm/nanogallery2@3/dist/css/nanogallery2.min.css" rel="stylesheet" type="text/css">
+            <script  type="text/javascript" src="https://cdn.jsdelivr.net/npm/nanogallery2@3/dist/jquery.nanogallery2.min.js"></script>
+            <link  href="style.css" rel="stylesheet" type="text/css">
+        </head>
+        <body>
+        
+              <h1>squirrelboy's gameboy repository</h1>
+
+              <body>
+                <div id="nanogallery2">squirrelboy's gameboys</div>
+                <script>
+                    jQuery(document).ready(function () {
+    
+                        jQuery("#nanogallery2").nanogallery2( {
+                            // ### gallery settings ### 
+                            itemsBaseURL:     '/images/',
+                            // GALLERY AND THUMBNAIL LAYOUT
+                            galleryDisplayMode: 'fullContent',
+                            thumbnailHeight: '400', thumbnailWidth: 'auto',
+                            thumbnailBaseGridHeight: 50,
+                            thumbnailAlignment: 'fillWidth',
+                            thumbnailL1GutterWidth: 4,
+                            thumbnailL1GutterHeight: 4,
+                            thumbnailBorderHorizontal: 5,
+                            thumbnailBorderVertical: 5,
+
+                            // THUMBNAIL TOOLS & LABEL
+                            thumbnailLabel: { display: true, position:'overImage', hideIcons: true, titleFontSize: '1em', align: 'right', titleMultiLine:true, displayDescription: false},
+                            thumbnailToolbarAlbum: null,
+
+                            // DISPLAY ANIMATION
+                            thumbnailDisplayTransition: 'slideDown',
+                            thumbnailDisplayTransitionDuration: 500,
+                            thumbnailDisplayInterval: 30,
+
+                            // THUMBNAIL'S HOVER ANIMATION
+                            thumbnailHoverEffect2: 'label_translateY_0px_-20px|image_scale_1.00_1.10|image_rotateZ_0deg_3deg|image_translateY_0px_-20px|tools_opacity_0_1|tools_translateY_30px_0px',
+                            touchAnimation: true,
+                            touchAutoOpenDelay: 800,
+
+                            // GALLERY THEME
+                            galleryTheme : { 
+                                thumbnail: { background: '#444', backgroundImage: 'linear-gradient(315deg, #111 0%, #557 90%)', borderColor: '#000', labelOpacity : 1, labelBackground: '#444', titleColor: '#eee', titleBgColor: '#444', titleShadow: '' },
+                            },
+                            
+                            // ### gallery content ### 
+                            items: [
+                                { src: 'agb-pink.jpg', srct: 'thumbnails/agb-pink_tn.jpg', title: 'Milky Pink GBA, IPS v2' },
+                                { src: 'cgb-pink.jpg', srct: 'thumbnails/cgb-pink_tn.jpg', title: 'Sakura Pink GBC, Q5 OSD mod' },
+                                { src: 'agb-av.jpg', srct: 'thumbnails/agb-av_tn.jpg', title: 'Chameleon GBA, AV out IPS, aluminum buttons' },
+                                { src: 'ags-clear.jpg', srct: 'thumbnails/ags-clear_tn.jpg', title: 'Clear GBA SP, IPS v2, 900mAh battery' },
+                                { src: 'agb-black.jpg', srct: 'thumbnails/agb-black_tn.jpg', title: 'Black GBA, IPS v2' },
+                                { src: 'ags-pink.jpg', srct: 'thumbnails/ags-pink_tn.jpg', title: 'Refurbished Pearl Pink GBA SP, 900 mAh battery' },
+                                ]
+                            });
+                        });
+                    </script>
+              </body>
+
+          </body>
+      </html>
